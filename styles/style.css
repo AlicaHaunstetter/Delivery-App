@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #e76c1f;
+}
+
+.header-logo img {
+  max-height: 2rem;
+}
+
+.burger-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-menu img {
+  max-height: 2rem;
+  display: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.hero-image img {
+  aspect-ratio: 1 / 1;
+  width: 93%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -4.5rem;
+}
+
+.profile-picture img {
+  width: 7.5rem;
+  height: 7.5rem;
+  border: solid #fdeadc 0.5rem;
+  border-radius: 13rem;
+  box-shadow: 0.05rem 0.05rem 1rem rgba(0, 0, 0, 0.332);
+}
+
+.hero h1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #facaac;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+
+.rating img {
+  height: 1rem;
+  padding-right: 0.2rem;
+}
+
+.hero h4 {
+  padding-inline: 1rem;
+}
+
+.hero p {
+  margin: 0;
+}
+
+.burger-section {
+  margin-top: 0.75rem;
+  padding-block: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-section h2 {
+  color: white;
+  background-color: #e76c1f;
+  text-align: center;
+  width: 100%;
+}
+
+.burger-section > img {
+  width: 3.75rem;
+  margin-bottom: -1rem;
+  z-index: 1;
+}
+
+.product-box {
+  width: 80%;
+  margin-top: 2rem;
+  margin-inline: 2rem;
+  background-color: #fdeadc;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.product-box img {
+  width: 100%;
+  height: 6rem;
+  object-fit: cover;
+  object-position: center 60%;
+  border-radius: 1rem;
+}
+
+.price-and-add {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.add-to-basket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 2rem;
+  width: 8rem;
+  border-radius: 1rem;
+}

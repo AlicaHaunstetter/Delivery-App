@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "PalanquinDark";
+  src: url("/fonts/PalanquinDark-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "PalanquinDark";
+  src: url("/fonts/PalanquinDark-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "PalanquinDark";
+  src: url("/fonts/PalanquinDark-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Palanquin";
+  src: url("/fonts/Palanquin-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Palanquin";
+  src: url("/fonts/Palanquin-Regular.ttf");
+  font-weight: 400;
+}
+
+:root {
+  --font-palanquin-dark: "PalanquinDark", sans-serif;
+}
+
+:root {
+  --font-palanquin: "Palanquin", sans-serif;
+}
+
+h1 {
+  font-family: var(--font-palanquin-dark);
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  color: #363534;
+}
+
+h2 {
+  font-family: var(--font-palanquin-dark);
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 0;
+}
+
+h3 {
+  font-family: var(--font-palanquin);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 0;
+}
+
+h4 {
+  font-family: var(--font-palanquin);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-align: center;
+  margin: 0;
+  color: #363534;
+}
+
+p {
+  font-family: var(--font-palanquin);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin: 0;
+}
