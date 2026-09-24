@@ -11,16 +11,24 @@ function renderBurger() {
   let burgerContent = document.getElementById("burger-cards");
   burgerContent.innerHTML = "";
   for (let index = 0; index < burgers.length; index++) {
-    burgerContent.innerHTML += getProductTemplate(index);
+    burgerContent.innerHTML += getBurgerTemplate(index);
   }
 }
 
 function renderPizza() {
-  // for schleife array pizzas
+  let pizzaContent = document.getElementById("pizza-cards");
+  pizzaContent.innerHTML = "";
+  for (let index = 0; index < pizzas.length; index++) {
+    pizzaContent.innerHTML += getPizzaTemplate(index);
+  }
 }
 
 function renderSalad() {
-  // for schleife array salads
+  let saladContent = document.getElementById("salad-cards");
+  saladContent.innerHTML = "";
+  for (let index = 0; index < pizzas.length; index++) {
+    saladContent.innerHTML += getSaladTemplate(index);
+  }
 }
 
 function renderBasket() {
