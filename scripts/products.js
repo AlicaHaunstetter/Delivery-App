@@ -4,7 +4,7 @@ let burgers = [
     name: "Veggie Mushroom Black Burger",
     description: "Mixed green salad, Tomatoes, Edamame, Mushrooms",
     price: 16.9,
-    addedToBasket: true,
+    addedToBasket: false,
     quantity: 1,
   },
   {
@@ -39,7 +39,7 @@ let pizzas = [
     name: "Pizza Margherita",
     description: "Tomato Sauce, Mozzarella",
     price: 11.9,
-    addedToBasket: true,
+    addedToBasket: false,
     quantity: 1,
   },
   {
@@ -84,7 +84,7 @@ let salads = [
     name: "Mini Green Salad",
     description: "Green salad, Cucumber, Carrots, Parsley, Radishes",
     price: 7.9,
-    addedToBasket: true,
+    addedToBasket: false,
     quantity: 1,
   },
   {
