@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./basket.css" />
     <title>DeliveryApp</title>
   </head>
-  <body>
+  <body onload="init()">
     <header>
       <div class="header-wrapper">
         <div class="header-logo">
@@ -165,64 +165,7 @@
       <section class="category-section">
         <img src="./assets/icon/burger.png" alt="Burger Icon" />
         <h2>Burger</h2>
-        <div class="meal-card-wrapper">
-          <div class="meal-card">
-            <img
-              src="./assets/img/1000.jpg"
-              alt="Veggie mushroom black burger"
-            />
-            <div class="meal-text">
-              <h3>Veggie Mushroom Black Burger</h3>
-              <p>
-                Chicken, Mozzarella, Gorgonzola, Fontina, Parmigiano Reggiano
-              </p>
-            </div>
-            <div class="price-and-add">
-              <h4>16,90€</h4>
-              <div class="add-to-basket">
-                <p>Add to basket</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="meal-card">
-            <img
-              src="./assets/img/1000.jpg"
-              alt="Veggie mushroom black burger"
-            />
-            <div class="meal-text">
-              <h3>Veggie Mushroom Black Burger</h3>
-              <p>
-                Chicken, Mozzarella, Gorgonzola, Fontina, Parmigiano Reggiano
-              </p>
-            </div>
-            <div class="price-and-add">
-              <h4>16,90€</h4>
-              <div class="add-to-basket">
-                <p>Add to basket</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="meal-card">
-            <img
-              src="./assets/img/1000.jpg"
-              alt="Veggie mushroom black burger"
-            />
-            <div class="meal-text">
-              <h3>Veggie Mushroom Black Burger</h3>
-              <p>
-                Chicken, Mozzarella, Gorgonzola, Fontina, Parmigiano Reggiano
-              </p>
-            </div>
-            <div class="price-and-add">
-              <h4>16,90€</h4>
-              <div class="add-to-basket">
-                <p>Add to basket</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div id="burger-cards" class="meal-card-wrapper"></div>
       </section>
 
       <section class="category-section">

@@ -213,16 +213,16 @@ header {
 }
 
 .meal-card img {
-  width: 100%;
+  width: 12rem;
   height: 6rem;
   object-fit: cover;
-  object-position: center 60%;
   border-radius: 1rem;
+  flex-shrink: 0;
 
-  @media (min-width: 860px) {
+  /* @media (min-width: 860px) {
     width: 12rem;
     height: 8rem;
-  }
+  } */
 }
 
 .meal-text {
