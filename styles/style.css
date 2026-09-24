@@ -207,7 +207,7 @@ header {
 
   @media (min-width: 860px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     width: 50%;
   }
 }
@@ -219,14 +219,16 @@ header {
   border-radius: 1rem;
   flex-shrink: 0;
 
-  /* @media (min-width: 860px) {
-    width: 12rem;
+  @media (min-width: 860px) {
+    width: 8rem;
     height: 8rem;
-  } */
+  }
 }
 
 .meal-text {
   padding-inline: 0;
+  flex: 1;
+  min-width: 0;
 
   @media (min-width: 860px) {
     padding-inline: 1rem;
