@@ -38,6 +38,7 @@ function renderBasket() {
     basketContent.innerHTML += getBasketTemplate(index);
   }
   calculateTotal();
+  updateBasketCount();
 }
 
 function addToBasket(category, index) {
@@ -103,7 +104,10 @@ function closeConfirmation() {
   confirmation.classList.remove("open");
 }
 
-//ich brauche für mobile noch die funktion, dass über dem warenkorb symbol in der navbar ein kreis mit der basket.length erscheint
-// -> html über die zeile basket icon kreis erstellen
-// wrapper um beides? damit es koordinaten von basket annimmt -margin für oben rechts positionieren
-// zahl mit `${basket.length}
+function updateBasketCount() {
+  let totalItems = 0;
+  for (let i = 0; i < basket.length; i++) {
+    totalItems = totalItems + basket[i].quantity;
+  }
+  document.getElementById("basket-count").textContent = `${totalItems}`;
+}

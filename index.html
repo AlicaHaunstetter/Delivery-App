@@ -90,7 +90,6 @@
             ></button>
           </div>
         </div>
-        ;
       </section>
 
       <section class="category-section">
@@ -132,9 +131,10 @@
       <a href="index.html"
         ><img src="./assets/icon/takeaway-inactive.png" alt="Your Order"
       /></a>
-      <a onclick="closeBasket()"
-        ><img src="./assets/icon/basket-inactive.png" alt="Your Basket"
-      /></a>
+      <a onclick="closeBasket()" class="basket-nav-link">
+        <img src="./assets/icon/basket-inactive.png" alt="Your Basket" />
+        <span id="basket-count" class="basket-count">0</span>
+      </a>
     </nav>
   </body>
 </html>
