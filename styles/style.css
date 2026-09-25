@@ -251,6 +251,10 @@ header {
   }
 }
 
+.price-and-add button {
+  border-width: 0;
+}
+
 .add-to-basket {
   display: flex;
   justify-content: center;
@@ -259,6 +263,14 @@ header {
   height: 2rem;
   width: 8rem;
   border-radius: 1rem;
+}
+
+.add-to-basket p {
+  margin-top: -0.2rem;
+
+  &:active {
+    transform: translateY(0.1rem);
+  }
 }
 
 footer {

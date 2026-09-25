@@ -26,19 +26,21 @@ function renderPizza() {
 function renderSalad() {
   let saladContent = document.getElementById("salad-cards");
   saladContent.innerHTML = "";
-  for (let index = 0; index < pizzas.length; index++) {
+  for (let index = 0; index < salads.length; index++) {
     saladContent.innerHTML += getSaladTemplate(index);
   }
 }
 
 function renderBasket() {
-  // for schleife let basket
-  //     if basket empty = display: none
+  let basketContent = document.getElementById("basket");
+  basketContent.innerHTML = "";
+  for (let index = 0; index < basket.length; index++) {
+    basketContent.innerHTML += getBasketTemplate(index);
+  }
 }
 
-function addProductToBasket(productNumber) {
-  // if product in basket = 0 { push product + quantity = 1 };
-  // else { quantity + 1 }
+function addToBasket(index) {
+  // let
   // renderBasket();
 }
 
