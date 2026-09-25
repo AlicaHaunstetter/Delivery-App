@@ -50,8 +50,8 @@
         <h4>The best of Burgers, Pizza and Greens, all in one great place.</h4>
       </section>
 
-      <section class="confirmation">
-        <div class="close-confirmation">X</div>
+      <section id="confirmation" class="confirmation">
+        <div class="close-confirmation" onclick="closeConfirmation()">X</div>
         <img src="./assets/icon/delivery.png" alt="Delivery Icon" />
         <h2>Order confirmed!</h2>
         <h3>Your food is on the way!</h3>
@@ -59,7 +59,7 @@
 
       <section id="basket">
         <div class="basket">
-          <div class="close-basket">X</div>
+          <div onclick="closeBasket()" class="close-basket">X</div>
           <h2>Your Basket</h2>
           <div id="basket-scroll-wrapper" class="basket-scroll-wrapper"></div>
 
@@ -82,9 +82,12 @@
                 <div class="summary-value" id="total">41,69€</div>
               </div>
             </div>
-            <button class="buy-button" id="buy-button" type="button">
-              Buy now (41,69€)
-            </button>
+            <button
+              class="buy-button"
+              id="buy-button"
+              type="button"
+              onclick="buyNow()"
+            ></button>
           </div>
         </div>
         ;
@@ -129,7 +132,7 @@
       <a href="index.html"
         ><img src="./assets/icon/takeaway-inactive.png" alt="Your Order"
       /></a>
-      <a href="index.html"
+      <a onclick="closeBasket()"
         ><img src="./assets/icon/basket-inactive.png" alt="Your Basket"
       /></a>
     </nav>

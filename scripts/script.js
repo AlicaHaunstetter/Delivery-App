@@ -40,14 +40,6 @@ function renderBasket() {
   calculateTotal();
 }
 
-function buttonAddedQuantity() {
-  // show added quantity in get element by id added to basket
-}
-
-function buyNow() {
-  // onclick buy now -> display confirmation
-}
-
 function addToBasket(category, index) {
   let lists = { burger: burgers, pizza: pizzas, salad: salads };
   let product = lists[category][index];
@@ -90,3 +82,28 @@ function calculateTotal() {
     "Buy now (" + total.toFixed(2).replace(".", ",") + "€)";
   return total;
 }
+
+function deleteProduct(index) {
+  basket.splice(index, 1);
+  renderBasket();
+}
+
+function quantityPlusOne(index) {
+  basket[index].quantity = basket[index].quantity + 1;
+  renderBasket();
+}
+
+function quantityMinusOne(index) {
+  basket[index].quantity = basket[index].quantity - 1;
+  renderBasket();
+}
+
+function closeConfirmation() {
+  let confirmation = document.getElementById("confirmation");
+  confirmation.classList.remove("open");
+}
+
+//ich brauche für mobile noch die funktion, dass über dem warenkorb symbol in der navbar ein kreis mit der basket.length erscheint
+// -> html über die zeile basket icon kreis erstellen
+// wrapper um beides? damit es koordinaten von basket annimmt -margin für oben rechts positionieren
+// zahl mit `${basket.length}

@@ -62,16 +62,34 @@ function getSaladTemplate(index) {
 }
 
 function getBasketTemplate(index) {
+  let minusOrDelete;
+
+  if (basket[index].quantity === 1) {
+    minusOrDelete = `<a onclick="deleteProduct(${index})"><img src="./assets/icon/delete-inactive.png" alt="Delete Button" /></a>`;
+  } else {
+    minusOrDelete = `<a onclick="quantityMinusOne(${index})">-</a>`;
+  }
+
   return `
       <div class="basket-product-card">
         <p>${basket[index].quantity}x ${basket[index].name}</p>
         <div class="quantity-and-price">
           <div class="quantity">
-            <img src="./assets/icon/delete-inactive.png" alt="Delete Button" />
+            ${minusOrDelete}
             <p>${basket[index].quantity}</p>
-            <p>+</p>
+            <a onclick="quantityPlusOne(${index})">+</a>
           </div>
           <p id="basket-sum-product">${(basket[index].price * basket[index].quantity).toFixed(2).replace(".", ",")}€</p>
         </div>
       </div>`;
+}
+
+function buyNow() {
+  let confirmation = document.getElementById("confirmation");
+  confirmation.classList.add("open");
+}
+
+function closeBasket() {
+  let closingTag = document.getElementById("basket");
+  closingTag.classList.toggle("open");
 }
