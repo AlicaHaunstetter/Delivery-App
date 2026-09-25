@@ -200,7 +200,7 @@ header {
 .meal-card {
   width: 80%;
   margin-top: 2rem;
-  margin-inline: 2rem;
+  margin-inline: 1rem;
   background-color: #fdeadc;
   padding: 1rem;
   border-radius: 1rem;
