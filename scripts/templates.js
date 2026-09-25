@@ -83,13 +83,3 @@ function getBasketTemplate(index) {
         </div>
       </div>`;
 }
-
-function buyNow() {
-  let confirmation = document.getElementById("confirmation");
-  confirmation.classList.add("open");
-}
-
-function closeBasket() {
-  let closingTag = document.getElementById("basket");
-  closingTag.classList.toggle("open");
-}

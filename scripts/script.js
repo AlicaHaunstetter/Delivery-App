@@ -111,3 +111,15 @@ function updateBasketCount() {
   }
   document.getElementById("basket-count").textContent = `${totalItems}`;
 }
+
+function buyNow() {
+  let confirmation = document.getElementById("confirmation");
+  confirmation.classList.add("open");
+  basket = [];
+  renderBasket();
+}
+
+function closeBasket() {
+  let closingTag = document.getElementById("basket");
+  closingTag.classList.toggle("open");
+}
