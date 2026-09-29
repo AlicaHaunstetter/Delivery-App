@@ -1,7 +1,16 @@
+#basket {
+  position: sticky;
+  top: 0;
+  height: 0;
+  z-index: 3;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
 .basket {
-  position: fixed;
-  top: 50%;
-  right: -0.1rem;
+  position: absolute;
+  top: 40vh;
+  right: 0;
   transform: translateY(-50%);
   z-index: 3;
   background-color: #363534;
@@ -11,9 +20,11 @@
   padding: 2rem 4rem 2rem 2rem;
 
   @media (max-width: 859px) {
+    position: fixed;
+    top: 50%;
+    right: -0.1rem;
     width: 101%;
     height: 101%;
-    z-index: 3;
     box-sizing: border-box;
     padding: 2rem;
     border-radius: 0;
@@ -86,6 +97,7 @@ a {
   flex-direction: row;
   align-items: center;
   gap: 0.2rem;
+  cursor: pointer;
 }
 
 .quantity img {
@@ -163,6 +175,7 @@ a {
   font-family: var(--font-palanquin-dark);
   font-weight: 400;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .confirmation img {

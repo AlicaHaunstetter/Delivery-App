@@ -79,8 +79,12 @@ function calculateTotal() {
   let total = subtotal + deliveryFee;
   document.getElementById("total").textContent =
     total.toFixed(2).replace(".", ",") + "€";
-  document.getElementById("buy-button").textContent =
+
+  let buyButton = document.getElementById("buy-button");
+  buyButton.textContent =
     "Buy now (" + total.toFixed(2).replace(".", ",") + "€)";
+  buyButton.disabled = subtotal <= 0;
+
   return total;
 }
 
@@ -113,6 +117,8 @@ function updateBasketCount() {
 }
 
 function buyNow() {
+  if (basket.length === 0) return;
+
   let confirmation = document.getElementById("confirmation");
   confirmation.classList.add("open");
   basket = [];
